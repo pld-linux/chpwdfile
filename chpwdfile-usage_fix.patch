@@ -1,0 +1,11 @@
+--- ./chpwdfile.c.org	Thu Jul 10 20:42:12 2003
++++ ./chpwdfile.c	Tue Oct 14 10:24:02 2003
+@@ -638,7 +638,7 @@
+  *  whitespace than 2.95 is
+  */
+     fprintf(stderr, "\nUsage for %s:\n", basename);
+-    fprintf(stderr, "\n\t\t%s [options] [username] \n");
++    fprintf(stderr, "\n\t\t%s [options] [username] \n", basename);
+     fprintf(stderr, "\n  Options:");
+     fprintf(stderr, "\n  -a  add the user             }");
+     fprintf(stderr, "\n  -d  delete the user          } Default is -%c", DEFAULTOPERATION);
