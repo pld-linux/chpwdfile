@@ -32,18 +32,18 @@ simple HTML form.
 </TODO>
 
 %description -l pl
-Ten program pozwala na administracjê plikami tekstowymi, zawieraj±cymi
-pary login:zaszyfrowane_has³o, u¿yteczne przy u¿ywaniu modu³u do PAM
-pam_pwdfile.
+Ten program pozwala na administrowanie plikami tekstowymi,
+zawieraj±cymi pary login:zaszyfrowane_has³o, u¿yteczne przy u¿ywaniu
+modu³u do PAM pam_pwdfile.
 
-Obs³ugiwana jest administracja wieloma plikami z has³ami i opcje
-minimalnej d³ugo¶ci hase³, itp. mog± byæ ustawione dla ka¿dego pliku
-osobno. Zaufani u¿ytkownicy mog± ustawiaæ te opcje z lini komend i
-manipulowaæ wpisami innych u¿ytkowników. Wspierane s± has³a DES oraz
+Mo¿liwe jest administrowanie wieloma plikami z has³ami, a opcje
+minimalnej d³ugo¶ci hase³ itp. mog± byæ ustawione dla ka¿dego pliku
+osobno. Zaufani u¿ytkownicy mog± ustawiaæ te opcje z linii poleceñ i
+manipulowaæ wpisami innych u¿ytkowników. Obs³ugiwane s± has³a DES oraz
 MD5.
 
 <TODO>
-Wersja CGI pozwala na operowanie pojedyñczym plikiem z has³ami poprzez
+Wersja CGI pozwala na operowanie pojedynczym plikiem z has³ami poprzez
 prosty interfejs HTML.
 </TODO>
 
@@ -59,14 +59,14 @@ prosty interfejs HTML.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/etc
+install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	BINDIR=%{_sbindir} \
 	MANDIR=%{_mandir}/man1
 
-install examples/chpwdfile.conf $RPM_BUILD_ROOT/etc
+install examples/chpwdfile.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -74,6 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README examples
-%attr(640,root,root) %config(noreplace) /etc/chpwdfile.conf
+%attr(640,root,root) %config(noreplace) %{_sysconfdir}/chpwdfile.conf
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man1/*.1*
