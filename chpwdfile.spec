@@ -31,6 +31,22 @@ A CGI version allows manipulation of a single password file via a
 simple HTML form.
 </TODO>
 
+%description -l pl
+Ten program pozwala na administracjê plikami tekstowymi, zawieraj±cymi
+pary login:zaszyfrowane_has³o, u¿yteczne przy u¿ywaniu modu³u do PAM
+pam_pwdfile.
+
+Obs³ugiwana jest administracja wieloma plikami z has³ami i opcje
+minimalnej d³ugo¶ci hase³, itp. mog± byæ ustawione dla ka¿dego pliku
+osobno. Zaufani u¿ytkownicy mog± ustawiaæ te opcje z lini komend i
+manipulowaæ wpisami innych u¿ytkowników. Wspierane s± has³a DES oraz
+MD5.
+
+<TODO>
+Wersja CGI pozwala na operowanie pojedyñczym plikiem z has³ami poprzez
+prosty interfejs HTML.
+</TODO>
+
 %prep
 %setup -q
 %patch0 -p1
@@ -39,7 +55,7 @@ simple HTML form.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	COPTS="%{rpmcflags} -Wall -I/usr/include/cgilib/"
+	COPTS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
