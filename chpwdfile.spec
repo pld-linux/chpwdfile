@@ -9,7 +9,7 @@ Epoch:		0
 License:	GPL v2
 Group:		Base/Authentication and Authorization
 Source0:	ftp://eclipse.che.uct.ac.za/chpwdfile/%{name}-%{version}.tar.gz
-# Source0-md5:	a2b789cb4846f38560207daed59418a6
+# Source0-md5:	7f63f7c1ce95cedace94d18745038768
 URL:		http://eclipse.che.uct.ac.za/chpwdfile/
 Requires:	pam-pam_pwdfile
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
