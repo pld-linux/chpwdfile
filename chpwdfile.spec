@@ -71,6 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README examples
-%attr(640,root,root) %config(noreplace) %{_sysconfdir}/chpwdfile.conf
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/chpwdfile.conf
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man1/*.1*
