@@ -3,13 +3,13 @@
 Summary:	Program to manage /etc/passwd-like files
 Summary(pl):	Program do zarz±dzania plikami podobnymi do /etc/passwd
 Name:		chpwdfile
-Version:	0.24
+Version:	0.26
 Release:	1
 Epoch:		0
 License:	GPL v2
 Group:		Base/Authentication and Authorization
 Source0:	ftp://eclipse.che.uct.ac.za/chpwdfile/%{name}-%{version}.tar.gz
-# Source0-md5:	8bdba005f58a09c7dc1b12692691179a
+# Source0-md5:	a2b789cb4846f38560207daed59418a6
 URL:		http://eclipse.che.uct.ac.za/chpwdfile/
 Requires:	pam-pam_pwdfile
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
