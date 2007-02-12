@@ -1,7 +1,7 @@
 # TODO:
 # - make cgi version
 Summary:	Program to manage /etc/passwd-like files
-Summary(pl):	Program do zarz±dzania plikami podobnymi do /etc/passwd
+Summary(pl.UTF-8):   Program do zarzƒÖdzania plikami podobnymi do /etc/passwd
 Name:		chpwdfile
 Version:	0.26
 Release:	1
@@ -30,19 +30,19 @@ A CGI version allows manipulation of a single password file via a
 simple HTML form.
 </TODO>
 
-%description -l pl
+%description -l pl.UTF-8
 Ten program pozwala na administrowanie plikami tekstowymi,
-zawieraj±cymi pary login:zaszyfrowane_has≥o, uøyteczne przy uøywaniu
-modu≥u do PAM pam_pwdfile.
+zawierajƒÖcymi pary login:zaszyfrowane_has≈Ço, u≈ºyteczne przy u≈ºywaniu
+modu≈Çu do PAM pam_pwdfile.
 
-Moøliwe jest administrowanie wieloma plikami z has≥ami, a opcje
-minimalnej d≥ugo∂ci hase≥ itp. mog± byÊ ustawione dla kaødego pliku
-osobno. Zaufani uøytkownicy mog± ustawiaÊ te opcje z linii poleceÒ i
-manipulowaÊ wpisami innych uøytkownikÛw. Obs≥ugiwane s± has≥a DES oraz
+Mo≈ºliwe jest administrowanie wieloma plikami z has≈Çami, a opcje
+minimalnej d≈Çugo≈õci hase≈Ç itp. mogƒÖ byƒá ustawione dla ka≈ºdego pliku
+osobno. Zaufani u≈ºytkownicy mogƒÖ ustawiaƒá te opcje z linii polece≈Ñ i
+manipulowaƒá wpisami innych u≈ºytkownik√≥w. Obs≈Çugiwane sƒÖ has≈Ça DES oraz
 MD5.
 
 <TODO>
-Wersja CGI pozwala na operowanie pojedynczym plikiem z has≥ami poprzez
+Wersja CGI pozwala na operowanie pojedynczym plikiem z has≈Çami poprzez
 prosty interfejs HTML.
 </TODO>
 
