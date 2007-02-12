@@ -1,7 +1,7 @@
 # TODO:
 # - make cgi version
 Summary:	Program to manage /etc/passwd-like files
-Summary(pl.UTF-8):   Program do zarządzania plikami podobnymi do /etc/passwd
+Summary(pl.UTF-8):	Program do zarządzania plikami podobnymi do /etc/passwd
 Name:		chpwdfile
 Version:	0.26
 Release:	1
